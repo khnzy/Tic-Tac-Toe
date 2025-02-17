@@ -1,0 +1,85 @@
+body {  
+    height: 900px;
+    background: linear-gradient(rgb(230, 230, 230), rgb(27, 193, 121));
+    color: #000000;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#board {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;  /* Adjusted width to account for the borders */
+    height: 360px; /* Adjusted height to account for the borders */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 5px solid #101010; /* Added border to the board instead of individual squares */
+}
+
+.square {
+    width: 100%; /* Fill the full width of the grid cell */
+    height: 100%; /* Fill the full height of the grid cell */
+    border: none; /* Remove border from individual squares */
+    background-color: #e1e1e1;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    background-color: #d1ebc9;
+}
+
+#restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    background-color: #ff0000;
+    color: #FFFFFF;
+}
+
+body.night-mode {
+    background: linear-gradient(rgb(10, 10, 10), rgb(40, 40, 40));
+    color: #ffffff;
+}
+
+#board.night-mode {
+    background-color: #2f2f2f;
+}
+
+.square.night-mode {
+    background-color: #4c4c4c;
+    color: #ffffff;
+}
+
+#nightModeButton {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+
+#nightModeButton:hover {
+    background-color: #ff8c00;
+    color: #FFFFFF;
+}
